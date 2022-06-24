@@ -11,8 +11,9 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import { Link } from 'react-router-dom';
 
-const pages = ['Home', 'My Projects', 'Videos', 'About Me', 'Contact Me'];
+const pages = ['Home', 'Projects', 'Videos', 'About', 'Contact'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const Header = () => {
@@ -86,7 +87,9 @@ const Header = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <Link to={page} style={{textDecoration:'none'}}>
                   <Typography textAlign="center">{page}</Typography>
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -110,6 +113,7 @@ const Header = () => {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
+              <Link to={page} style={{textDecoration:'none'}}>
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
@@ -117,6 +121,7 @@ const Header = () => {
               >
                 {page}
               </Button>
+              </Link>
             ))}
           </Box>
 
