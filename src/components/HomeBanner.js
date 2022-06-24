@@ -2,11 +2,13 @@ import React from 'react';
 import { Box, Button, createTheme, ThemeProvider, Typography } from '@mui/material';
 import { red, lightGreen } from '@mui/material/colors';
 import Image from 'mui-image';
+import { Link } from 'react-router-dom';
+import Resume from "../utils/MyResume.pdf";
 
 const theme = createTheme();
 
 theme.typography.h3 = {
-  fontSize: '1.2rem',
+  fontSize: '2rem',
   '@media (min-width:600px)': {
     fontSize: '2rem',
   },
@@ -26,11 +28,15 @@ const HomeBanner = () => {
             <Typography sx={{color:secondary}} variant="h3">Mia Bacchu, Front-End Web Developer
             </Typography>
             </ThemeProvider>
-            <Button sx={{mt:3,backgroundColor:secondary}} variant="contained">
-                Download
-                <br/>
-                My Resume
-            </Button>
+                
+                <Button sx={{mt:3,backgroundColor:secondary}} variant="contained">
+                <Link style={{textDecoration:'none',color:'white'}} to={Resume} target="_blank" download>
+                  Download
+                  <br/>
+                  My Resume
+                  </Link>
+                  </Button>
+                
             </Box>
         </Box>
     );
