@@ -19,18 +19,18 @@ theme.typography.h1 = {
   },
 };
 theme.typography.h2 = {
-    fontSize: '.5rem',
+    fontSize: '.7rem',
     '@media (min-width:600px)': {
-      fontSize: '.6rem',
-    },
-    [theme.breakpoints.up('sm')]: {
-      fontSize: '.7rem',
-    },
-    [theme.breakpoints.up('md')]: {
       fontSize: '.8rem',
     },
-    [theme.breakpoints.up('lg')]: {
+    [theme.breakpoints.up('sm')]: {
       fontSize: '.9rem',
+    },
+    [theme.breakpoints.up('md')]: {
+      fontSize: '1rem',
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontSize: '1.1rem',
     },
   };
 const Text = ( {variant,title,sx,style} ) => {
