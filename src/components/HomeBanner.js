@@ -5,7 +5,6 @@ import Image from 'mui-image';
 import { Link } from 'react-router-dom';
 import Resume from "../utils/MyResume.pdf";
 import Text from '../customization/Text';
-import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
 const HomeBanner = () => {
     const primary = lightGreen['A700'];
@@ -18,11 +17,10 @@ const HomeBanner = () => {
             <Box sx={{position:'absolute',top:'15rem',left:'10%',right:'10%'}}>
               <Text sx={{color:primary}} variant='h1' title='Welcome to My Website'/>
               <Text sx={{color:secondary}} variant='h1' title='Mia Bacchu, Front-End Web Developer'/>
-              <Tooltip title="Download">
-                <Button sx={{mt:3,backgroundColor:secondary}} variant="contained">
+              <Tooltip title="Click to Download">
+                <Button sx={{mt:3}} variant="contained">
                 <Link style={{textDecoration:'none',color:'white'}} to={Resume} target="_blank" download>
-                <Text variant='h2' title={<FileDownloadIcon/>}/>
-                <Text variant='h2' title='My Resume'/>
+                <Text variant='h3' title="My Resume"/>
                   </Link>
                   </Button>
                 </Tooltip>

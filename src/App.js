@@ -3,6 +3,7 @@ import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import About from './pages/About';
+import Blogs from './pages/Blogs';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
@@ -25,6 +26,10 @@ function App() {
       <Route
       path="/Projects"
       element={<Projects/>}
+    />
+      <Route
+      path="/Blogs"
+      element={<Blogs/>}
     />
       <Route
       path="/Videos"

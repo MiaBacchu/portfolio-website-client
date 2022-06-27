@@ -1,10 +1,14 @@
+import { Box } from '@mui/material';
 import React from 'react';
+import AboutHeader from '../components/AboutHeader';
+import AboutSkill from '../components/AboutSkill';
 
 const About = () => {
     return (
-        <div>
-            this is about
-        </div>
+        <Box>
+            <AboutHeader/>
+            <AboutSkill/>
+        </Box>
     );
 };
 
