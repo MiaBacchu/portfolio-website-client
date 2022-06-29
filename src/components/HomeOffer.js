@@ -11,7 +11,7 @@ const HomeOffer = () => {
         <Grid xs={11} md={5} lg={3} sx={{marginX:'1rem',backgroundColor:'#8A2BE2',marginBottom:'5rem',wordBreak:'break-all',py:'2rem',px:'1rem',borderRadius:'1rem'}}>
           <Text sx={{color:'rgb(77, 181, 255)'}} variant='h2' title='Web'></Text>
           <Text sx={{pb:'1rem',color:'rgb(77, 181, 255)'}} variant='h2' title='Development'></Text>
-          <Text sx={{pb:'1rem',color:'whitesmoke'}} variant='h3' title='Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.'></Text>
+          <Text sx={{pb:'1rem',color:'whitesmoke',wordBreak:'break-word'}} variant='h3' title='Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.'></Text>
         </Grid>
         <Grid xs={11} md={5} lg={3} sx={{marginX:'1rem',backgroundColor:'#8A2BE2',marginBottom:'5rem',wordBreak:'break-all',py:'2rem',px:'1rem',borderRadius:'1rem'}}>
           <Text sx={{color:'rgb(77, 181, 255)'}} variant='h2' title='React'></Text>

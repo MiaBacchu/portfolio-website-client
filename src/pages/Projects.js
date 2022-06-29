@@ -1,10 +1,12 @@
+import { Box } from '@mui/material';
 import React from 'react';
+import ProjectsMine from '../components/ProjectsMine';
 
 const MyProjects = () => {
     return (
-        <div>
-            this is my projects
-        </div>
+        <Box>
+            <ProjectsMine></ProjectsMine>
+        </Box>
     );
 };
 
