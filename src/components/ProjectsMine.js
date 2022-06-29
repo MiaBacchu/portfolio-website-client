@@ -1,7 +1,6 @@
 import { Button, Grid } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Text from '../customization/Text';
 import image1 from "../utils/bike-center.jpg"
 import image2 from "../utils/portfolio-website.jpg"

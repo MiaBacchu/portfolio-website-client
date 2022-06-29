@@ -25,7 +25,7 @@ const ContactSocial = () => {
           <Text sx={{pb:'1rem',color:'whitesmoke'}} variant='h1' title='Messenger'></Text>
           <Text sx={{pb:'1rem',color:'whitesmoke'}} variant='h2' title='Mia Bacchu'></Text>
           <Button type='submit' variant="contained">
-          <a style={{textDecoration:'none',color:'whitesmoke'}} rel="noreferrer" target='_blank' href="https://m.me/profile.php?id=100010408830205"><Text variant='h3' title='Send a Message'></Text></a>
+          <a style={{textDecoration:'none',color:'whitesmoke'}} rel="noreferrer" target='_blank' href="https://m.me/jewelranabacchu015/"><Text variant='h3' title='Send a Message'></Text></a>
           </Button>
         </Grid>
         <Grid xs={10} md={5} sx={{marginX:'1rem',backgroundColor:'#8A2BE2', marginBottom:'5rem', wordBreak:'break-all',py:'2rem',px:'1rem',borderRadius:'1rem'}}>
