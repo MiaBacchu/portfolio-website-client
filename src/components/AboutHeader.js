@@ -3,6 +3,7 @@ import React from 'react';
 import { GoProject } from 'react-icons/go';
 import { SiKnowledgebase } from 'react-icons/si';
 import Text from '../customization/Text';
+import introImage from '../utils/intro.JPG';
 import Image from 'mui-image';
 import { Link } from 'react-router-dom';
 
@@ -13,7 +14,7 @@ const AboutHeader = () => {
         <Text variant='h1' title="About Me" style={{color:'#F5F5DC',marginBottom:'2rem'}}/>
         <Grid container justifyContent='center'>
             <Grid xs={11} md={5} sx={{marginX:'1rem', marginBottom:'5rem'}}>
-        <Image style={{borderRadius:'1rem'}} src='https://i.ibb.co/4WDDtMw/DSC-0027-1.jpg'></Image>
+        <Image style={{borderRadius:'1rem'}} src={introImage}></Image>
         </Grid>
         <Grid xs={11} md={5} sx={{marginX:'1rem', marginBottom:'5rem', wordBreak:'break-words',py:'1rem',px:'1rem'}}>
           <Text sx={{color:'#F5F5DC'}} variant='h2' title="Hi, I'm Mia Bacchu"/>

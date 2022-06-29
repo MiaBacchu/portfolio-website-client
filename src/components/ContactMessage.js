@@ -4,6 +4,7 @@ import SendIcon from '@mui/icons-material/Send';
 import emailjs from '@emailjs/browser';
 import Image from 'mui-image';
 import Text from '../customization/Text';
+import backImage from '../utils/contact-image.jpg';
 
 
 const ContactMessage = () => {
@@ -22,7 +23,7 @@ const ContactMessage = () => {
     return (
         <Box>
             <Box sx={{height:'35rem',filter:'brightness(30%)'}}>
-            <Image src="https://i.ibb.co/zRgkFkF/20220314-174208-1.jpg"/>
+            <Image src={backImage}/>
             </Box>
             <Box sx={{position:'absolute',top:'5rem',left:'1%',right:'1%'}}>
             <Text variant='h1' title='Message Me' style={{color:'#4db5ff'}}/>

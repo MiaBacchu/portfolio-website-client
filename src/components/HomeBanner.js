@@ -3,6 +3,7 @@ import { Box, Button, Tooltip } from '@mui/material';
 import { red, lightGreen } from '@mui/material/colors';
 import Image from 'mui-image';
 import { Link } from 'react-router-dom';
+import homeImage from "../utils/homeImage.JPG";
 import Resume from "../utils/MyResume.pdf";
 import Text from '../customization/Text';
 
@@ -12,7 +13,7 @@ const HomeBanner = () => {
     return (
         <Box>
             <Box sx={{height:'35rem',filter:'brightness(20%)'}}>
-            <Image src="https://i.ibb.co/pd31B02/DSC-0010-1.jpg"/>
+            <Image src={homeImage}/>
             </Box>
             <Box sx={{position:'absolute',top:'15rem',left:'10%',right:'10%'}}>
               <Text sx={{color:primary}} variant='h1' title='Welcome to My Website'/>
