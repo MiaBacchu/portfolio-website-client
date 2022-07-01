@@ -4,7 +4,7 @@ import SendIcon from '@mui/icons-material/Send';
 import emailjs from '@emailjs/browser';
 import Image from 'mui-image';
 import Text from '../customization/Text';
-import backImage from '../utils/contact-image.jpg';
+import backImage from '../utils/contact-image.png';
 
 
 const ContactMessage = () => {

@@ -3,7 +3,7 @@ import { Box, Button, Tooltip } from '@mui/material';
 import { red, lightGreen } from '@mui/material/colors';
 import Image from 'mui-image';
 import { Link } from 'react-router-dom';
-import homeImage from "../utils/homeImage.JPG";
+import homeImage from "../utils/homeImage.jpg";
 import Resume from "../utils/MyResume.pdf";
 import Text from '../customization/Text';
 

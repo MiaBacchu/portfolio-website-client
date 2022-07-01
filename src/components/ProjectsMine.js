@@ -3,7 +3,7 @@ import { Box } from '@mui/system';
 import React from 'react';
 import Text from '../customization/Text';
 import image1 from "../utils/bike-center.jpg"
-import image2 from "../utils/portfolio-website.jpg"
+import image2 from "../utils/portfolio-website.png"
 import image3 from "../utils/food-delivery.jpg"
 import image4 from "../utils/general-hospital.jpg"
 import image5 from "../utils/spoken-english.jpg"

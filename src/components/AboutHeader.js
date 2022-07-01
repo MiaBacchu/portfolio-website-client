@@ -3,7 +3,7 @@ import React from 'react';
 import { GoProject } from 'react-icons/go';
 import { SiKnowledgebase } from 'react-icons/si';
 import Text from '../customization/Text';
-import introImage from '../utils/intro.JPG';
+import introImage from '../utils/intro.png';
 import Image from 'mui-image';
 import { Link } from 'react-router-dom';
 
