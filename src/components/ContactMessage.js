@@ -5,6 +5,7 @@ import emailjs from '@emailjs/browser';
 import Image from 'mui-image';
 import Text from '../customization/Text';
 import backImage from '../utils/contact-image.png';
+import { Fade } from 'react-reveal';
 
 
 const ContactMessage = () => {
@@ -26,24 +27,34 @@ const ContactMessage = () => {
             <Image src={backImage}/>
             </Box>
             <Box sx={{position:'absolute',top:'5rem',left:'1%',right:'1%'}}>
+            <Fade top>
             <Text variant='h1' title='Message Me' style={{color:'#4db5ff'}}/>
+            </Fade>
             <form ref={form} onSubmit={sendEmail} style={{marginTop:'1rem',marginBottom:'1rem'}}>
-        <Input sx={{width:'13rem',height:'3rem',backgroundColor:'whitesmoke', borderRadius:'.5rem',paddingLeft:'.5rem'}} type='text' name='name' placeholder='Your Name' required/>
+        <Fade left>
+        <Input sx={{width:'13rem',height:'3rem',backgroundColor:'#D1D7E2', borderRadius:'.5rem',paddingLeft:'.5rem'}} type='text' name='name' placeholder='Your Name' required/>
+        </Fade>
         <br></br>
         <br></br>
-        <Input sx={{width:'13rem',height:'3rem',backgroundColor:'whitesmoke', borderRadius:'.5rem',paddingLeft:'.5rem'}} type='email' email='email' placeholder='Your Email' required/>
+        <Fade right>
+        <Input sx={{width:'13rem',height:'3rem',backgroundColor:'#D1D7E2', borderRadius:'.5rem',paddingLeft:'.5rem'}} type='email' email='email' placeholder='Your Email' required/>
+        </Fade>
         <br></br>
         <br></br>
+        <Fade top>
         <TextareaAutosize
             name='message'
             minRows={6}
             placeholder="Your Message"
-            style={{width:'13rem',backgroundColor:'whitesmoke', borderRadius:'.5rem',paddingLeft:'.5rem',paddingTop:'.5rem'}}
+            style={{width:'13rem',backgroundColor:'#D1D7E2', borderRadius:'.5rem',paddingLeft:'.5rem',paddingTop:'.5rem'}}
             required
         />
+        </Fade>
         <br></br>
         <br></br>
-        <Button type='submit' variant="contained" endIcon={<SendIcon />}><Text variant='h3' title='Send'></Text></Button>
+        <Fade bottom>
+        <Button sx={{color:'#D1D7E2'}} type='submit' variant="contained" endIcon={<SendIcon />}><Text variant='h3' title='Send'></Text></Button>
+        </Fade>
         </form>
         </Box>
         </Box>
