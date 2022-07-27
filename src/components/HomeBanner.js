@@ -3,7 +3,7 @@ import { Box, Button, Tooltip } from '@mui/material';
 import Image from 'mui-image';
 import { Link } from 'react-router-dom';
 import homeImage from "../utils/homeImage.jpg";
-import Resume from "../utils/MyResume.pdf";
+import Resume from "../utils/MiaBacchu.pdf";
 import Text from '../customization/Text';
 import { Fade } from 'react-reveal';
 
